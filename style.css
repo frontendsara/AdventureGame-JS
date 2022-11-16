@@ -30,3 +30,7 @@ p{
 .btn-style:hover{
     background-color: lightgray;
 }
+
+.hidden{
+    display: none;
+}

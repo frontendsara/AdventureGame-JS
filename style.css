@@ -5,23 +5,26 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #072A2D;
-    font-size: 1.5rem;
-    color: whitesmoke;
+    background-image: url(/img/house.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .container{
     text-align: center;
-    width: 50%;
-    background-color: #136c72;
+    width: 20rem;
+    background-color: grey;
     padding: 2rem;
     border-radius: 2rem;
     box-shadow: 0 0 10px 2px black;
     height: 12rem;
+    opacity: 0.8;
 }
 
 p{
     font-size: 1.5rem;
+    color: whitesmoke;
 }
 
 .btn-style{

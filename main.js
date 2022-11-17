@@ -109,7 +109,11 @@ function endScene () {
     text.textContent ="Nu är du hemma och kan tänka tillbaka på ditt äventyr";
 
     button1.textContent = "Spela Igen";
-    button1.addEventListener("click", startScene);
+    button1.addEventListener("click", newPage);
 
     button2.classList.add("hidden");
+}
+
+function newPage (){
+    location.reload();
 }

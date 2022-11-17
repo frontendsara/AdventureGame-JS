@@ -12,12 +12,12 @@ body{
 
 .container{
     text-align: center;
-    width: 20rem;
+    width: 50%;
     background-color: #136c72;
     padding: 2rem;
     border-radius: 2rem;
     box-shadow: 0 0 10px 2px black;
-    height: 15rem;
+    height: 12rem;
 }
 
 p{

@@ -30,7 +30,7 @@ function forestScene () {
     const text = document.getElementById("text");
     const button1 = document.getElementById("button1");
     const button2 = document.getElementById("button2");
-    document.body.style.backgroundImage = "url(forest.jpg')"
+    document.body.style.backgroundImage = "url('forest.jpg')"
 
     text.textContent = "I skogen hittar du en koja bakom berg och sly. Vill du gå in?";
 

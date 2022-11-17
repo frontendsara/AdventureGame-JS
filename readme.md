@@ -1,3 +1,3 @@
 # Text-based adventure game
 
-DEMO [här] (https://github.com/frontendsara/adventureGame-JS).
+DEMO [här] (https://frontendsara.github.io/adventureGame-JS/)

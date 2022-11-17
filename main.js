@@ -1,9 +1,17 @@
 window.addEventListener("DOMContentLoaded", main);
 
+/**
+ * den här funktionen startar spelet
+ */
 function main (){
     startScene();
 }
 
+/**
+ * den här funktionen hämtar knappar och textfält från HTML
+ * 
+ * första scenen i spelet
+ */
 function startScene () {
     const text = document.getElementById("text");
     const button1 = document.getElementById("button1");
@@ -12,10 +20,10 @@ function startScene () {
     text.textContent = "Hej! Du ska ut på äventyr i skogen eller till havet. Vad väljer du?";
 
     button1.textContent = "Skogen";
-    button1.addEventListener("click", forestScene);
+    button1.onclick = forestScene;
 
     button2.textContent = "Havet";
-    button2.addEventListener("click", oceanScene);
+    button2.onclick = oceanScene;
 }
 
 function forestScene () {
@@ -27,10 +35,10 @@ function forestScene () {
     text.textContent = "I skogen hittar du en koja bakom berg och sly. Vill du gå in?";
 
     button1.textContent = "Ja!";
-    button1.addEventListener("click", forestSceneOne);
+    button1.onclick = forestSceneOne;
 
     button2.textContent = "Nej det verkar läskigt. Låt oss gå till havet istället";
-    button2.addEventListener("click", oceanScene);
+    button2.onclick = oceanScene;
 }
 
 function forestSceneOne (){
@@ -42,10 +50,10 @@ function forestSceneOne (){
     text.textContent = "HJÄLP! SPRING! Här bodde visst ett troll som inte var så sugen på besök. Vart vill du fly?";
 
     button1.textContent = "Till Havet";
-    button1.addEventListener("click", oceanScene)
+    button1.onclick = oceanScene;
 
     button2.textContent = "Hem!";
-    button2.addEventListener("click", endScene);
+    button2.onclick = endScene;
 }
 
 function oceanScene () {
@@ -57,10 +65,10 @@ function oceanScene () {
     text.textContent = "Åh vilka friska vindar här är, en sjöman älskar havets våg. Vad sägs om att ta båten och fiska?";
 
     button1.textContent ="Nja, det var lite för friska vindar. Jag går hem";
-    button1.addEventListener("click", endScene);
+    button1.onclick = endScene;
 
     button2.textContent = "Låt oss se om vi får napp!"
-    button2.addEventListener("click", oceanSceneOne)
+    button2.onclick = oceanSceneOne;
 }
 
 function oceanSceneOne () {
@@ -72,10 +80,10 @@ function oceanSceneOne () {
     text.textContent = "En fisk på kroken, hurra! Vad vill du göra nu, gå hem eller fortsätta fiska?";
 
     button1.textContent = "Gå Hem";
-    button1.addEventListener("click", endScene);
+    button1.onclick = endScene;
 
     button2.textContent = "Fortsätta fiska";
-    button2.addEventListener("click", oceanSceneTwo);
+    button2.onclick = oceanSceneTwo;
 }
 
 function oceanSceneTwo () {
@@ -87,10 +95,10 @@ function oceanSceneTwo () {
     text.textContent = "WOW, en fisk till! Vill du fortsätta testa din fiskelycka eller känner du dig redo att gå hem?";
 
     button1.textContent = "Gå hem";
-    button1.addEventListener("click", endScene);
+    button1.onclick = endScene;
 
     button2.textContent = " Fortsätta Fiska";
-    button2.addEventListener("click", oceanSceneThree);
+    button2.onclick = oceanSceneThree;
 }
 
 function oceanSceneThree () {
@@ -102,7 +110,7 @@ function oceanSceneThree () {
     text.textContent = "Tyvärr så fick du ingen mer fisk på kroken. Dags att gå hem.";
 
     button1.textContent = "Gå Hem";
-    button1.addEventListener("click", endScene);
+    button1.onclick = endScene;
 
     button2.classList.add("hidden");
 }
@@ -116,11 +124,11 @@ function endScene () {
     text.textContent ="Nu är du hemma och kan tänka tillbaka på ditt äventyr";
 
     button1.textContent = "Spela Igen";
-    button1.addEventListener("click", newPage);
+    button1.onclick = newPage;
 
     button2.classList.add("hidden");
-}
 
+}/**den här funktionen laddar om sidan och spelet börjar på nytt */
 function newPage (){
     location.reload();
 }

@@ -8,7 +8,6 @@ function startScene () {
     const text = document.getElementById("text");
     const button1 = document.getElementById("button1");
     const button2 = document.getElementById("button2");
-    
 
     text.textContent = "Hej! Du ska ut på äventyr i skogen eller till havet. Vad väljer du?";
 
@@ -23,6 +22,7 @@ function forestScene () {
     const text = document.getElementById("text");
     const button1 = document.getElementById("button1");
     const button2 = document.getElementById("button2");
+    document.body.style.backgroundImage = "url('/img/forest.jpg')"
 
     text.textContent = "I skogen hittar du en koja bakom berg och sly. Vill du gå in?";
 
@@ -37,6 +37,7 @@ function forestSceneOne (){
     const text = document.getElementById("text");
     const button1 = document.getElementById("button1");
     const button2 = document.getElementById("button2");
+    document.body.style.backgroundImage = "url('/img/forest.jpg')"
 
     text.textContent = "HJÄLP! SPRING! Här bodde visst ett troll som inte var så sugen på besök. Vart vill du fly?";
 
@@ -51,6 +52,7 @@ function oceanScene () {
     const text = document.getElementById("text");
     const button1 = document.getElementById("button1");
     const button2 = document.getElementById("button2");
+    document.body.style.backgroundImage = "url('/img/ocean.jpg')"
 
     text.textContent = "Åh vilka friska vindar här är, en sjöman älskar havets våg. Vad sägs om att ta båten och fiska?";
 
@@ -65,6 +67,7 @@ function oceanSceneOne () {
     const text = document.getElementById("text");
     const button1 = document.getElementById("button1");
     const button2 = document.getElementById("button2");
+    document.body.style.backgroundImage = "url('/img/ocean.jpg')"
 
     text.textContent = "En fisk på kroken, hurra! Vad vill du göra nu, gå hem eller fortsätta fiska?";
 
@@ -79,6 +82,7 @@ function oceanSceneTwo () {
     const text = document.getElementById("text");
     const button1 = document.getElementById("button1");
     const button2 = document.getElementById("button2");
+    document.body.style.backgroundImage = "url('/img/ocean.jpg')"
 
     text.textContent = "WOW, en fisk till! Vill du fortsätta testa din fiskelycka eller känner du dig redo att gå hem?";
 
@@ -93,6 +97,7 @@ function oceanSceneThree () {
     const text = document.getElementById("text");
     const button1 = document.getElementById("button1");
     const button2 = document.getElementById("button2");
+    document.body.style.backgroundImage = "url('/img/ocean.jpg')"
 
     text.textContent = "Tyvärr så fick du ingen mer fisk på kroken. Dags att gå hem.";
 
@@ -106,6 +111,7 @@ function endScene () {
     const text = document.getElementById("text");
     const button1 = document.getElementById("button1");
     const button2 = document.getElementById("button2");
+    document.body.style.backgroundImage = "url('/img/house.jpg')"
 
     text.textContent ="Nu är du hemma och kan tänka tillbaka på ditt äventyr";
 

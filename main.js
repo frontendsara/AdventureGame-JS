@@ -1,32 +1,34 @@
 window.addEventListener("DOMContentLoaded", main);
 
+/** @type {HTMLParagraphElement} ändrar texten i varje scen */
+let text;
+/** @type {HTMLButtonElement} ger användaren valmöjlighet i form av en knapp */
+let button1;
+/** @type {HTMLButtonElement} ger användaren valmöjlighet i form av en knapp */
+let button2;
+
 /**
  * den här funktionen startar spelet
  * hämtar knappar och text till varje scen
  */
 function main (){
-    startScene();
     allContext();
+    startScene();
 }
 
-/*function saveNameAndContinue() {
-    const input = document.getElementById("input");
-    username = input.value
-    input.value = "";
-    loadNextScene();
-}*/
-
 function allContext(){
-    const text = document.getElementById("text");
-    const button1 = document.getElementById("button1");
-    const button2 = document.getElementById("button2");
-    const input = document.getElementById("input");
+    text = document.getElementById("text");
+    button1 = document.getElementById("button1");
+    button2 = document.getElementById("button2");
+    input = document.getElementById("input");
 } 
 
 /**
  * första scenen i spelet
  */
 function startScene () {
+    document.body.style.backgroundImage = "url('./img/house.jpg')"
+
     text.textContent = "Hej! Du ska ut på äventyr i skogen eller till havet. Vad väljer du?";
 
     button1.textContent = "Skogen";
@@ -37,7 +39,7 @@ function startScene () {
 }
 
 function forestScene () {
-    document.body.style.backgroundImage = "url('forest.jpg')"
+    document.body.style.backgroundImage = "url('./img/forest.jpg')"
 
     text.textContent = "I skogen hittar du en koja bakom berg och sly. Vill du gå in?";
 
@@ -49,7 +51,7 @@ function forestScene () {
 }
 
 function forestSceneOne (){
-    document.body.style.backgroundImage = "url('forest.jpg')"
+    document.body.style.backgroundImage = "url('./img/forest.jpg')"
 
     text.textContent = "HJÄLP! SPRING! Här bodde visst ett troll som inte var så sugen på besök. Vart vill du fly?";
 
@@ -61,7 +63,7 @@ function forestSceneOne (){
 }
 
 function oceanScene () {
-    document.body.style.backgroundImage = "url('ocean.jpg')"
+    document.body.style.backgroundImage = "url('./img/ocean.jpg')"
 
     text.textContent = "Åh vilka friska vindar här är, en sjöman älskar havets våg. Vad sägs om att ta båten och fiska?";
 
@@ -73,7 +75,7 @@ function oceanScene () {
 }
 
 function oceanSceneOne () {
-    document.body.style.backgroundImage = "url('ocean.jpg')"
+    document.body.style.backgroundImage = "url('./img/ocean.jpg')"
 
     text.textContent = "En fisk på kroken, hurra! Vad vill du göra nu, gå hem eller fortsätta fiska?";
 
@@ -85,7 +87,7 @@ function oceanSceneOne () {
 }
 
 function oceanSceneTwo () {
-    document.body.style.backgroundImage = "url('ocean.jpg')"
+    document.body.style.backgroundImage = "url('./img/ocean.jpg')"
 
     text.textContent = "WOW, en fisk till! Vill du fortsätta testa din fiskelycka eller känner du dig redo att gå hem?";
 
@@ -97,7 +99,7 @@ function oceanSceneTwo () {
 }
 
 function oceanSceneThree () {
-    document.body.style.backgroundImage = "url('ocean.jpg')"
+    document.body.style.backgroundImage = "url('./img/ocean.jpg')"
 
     text.textContent = "Tyvärr så fick du ingen mer fisk på kroken. Dags att gå hem.";
 
@@ -108,7 +110,7 @@ function oceanSceneThree () {
 }
 
 function endScene () {
-    document.body.style.backgroundImage = "url('house.jpg')"
+    document.body.style.backgroundImage = "url('./img/house.jpg')"
 
     text.textContent ="Nu är du hemma och kan tänka tillbaka på ditt äventyr";
 

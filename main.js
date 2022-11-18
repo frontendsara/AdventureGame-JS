@@ -9,10 +9,18 @@ function main (){
     allContext();
 }
 
+/*function saveNameAndContinue() {
+    const input = document.getElementById("input");
+    username = input.value
+    input.value = "";
+    loadNextScene();
+}*/
+
 function allContext(){
     const text = document.getElementById("text");
     const button1 = document.getElementById("button1");
     const button2 = document.getElementById("button2");
+    const input = document.getElementById("input");
 } 
 
 /**

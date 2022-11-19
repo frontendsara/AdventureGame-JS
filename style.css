@@ -12,13 +12,13 @@ body{
 }
 
 .container{
+    display: inline-block;
     text-align: center;
-    width: 40%;
     background-color: grey;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 2rem;
     box-shadow: 0 0 10px 2px black;
-    height: 12rem;
+    height: 10rem;
     opacity: 0.8;
 }
 
@@ -28,7 +28,7 @@ p{
 }
 
 .btn-style{
-    padding: 1em;
+    padding: .5em;
     font-size: 1rem;
     border-radius: .5rem;
 }

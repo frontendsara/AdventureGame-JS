@@ -12,20 +12,18 @@ let button2;
  * hämtar knappar och text till varje scen
  */
 function main (){
-    allContext();
+    allElements();
     startScene();
 }
 
-function allContext(){
+/**Innehåller alla element till varje scen */
+function allElements(){
     text = document.getElementById("text");
     button1 = document.getElementById("button1");
     button2 = document.getElementById("button2");
-    input = document.getElementById("input");
 } 
 
-/**
- * första scenen i spelet
- */
+/** första scenen i spelet med tillhörande element, bilder, text och knappar */
 function startScene () {
     document.body.style.backgroundImage = "url('./img/house.jpg')"
 
@@ -38,6 +36,7 @@ function startScene () {
     button2.onclick = oceanScene;
 }
 
+/**En förgrening till skogssenen med tillhörande element, bilder, text och knappar för fortsatt val framåt*/
 function forestScene () {
     document.body.style.backgroundImage = "url('./img/forest.jpg')"
 
@@ -49,7 +48,7 @@ function forestScene () {
     button2.textContent = "Nej det verkar läskigt. Låt oss gå till havet istället";
     button2.onclick = oceanScene;
 }
-
+/** Fortsättning på skogsscen med bild, text och knappar för fortsatt val framåt*/
 function forestSceneOne (){
     document.body.style.backgroundImage = "url('./img/forest.jpg')"
 
@@ -62,6 +61,7 @@ function forestSceneOne (){
     button2.onclick = endScene;
 }
 
+/** En förgrening till havsscen med bild, text och knappar för fortsatt val framåt*/
 function oceanScene () {
     document.body.style.backgroundImage = "url('./img/ocean.jpg')"
 
@@ -74,6 +74,7 @@ function oceanScene () {
     button2.onclick = oceanSceneOne;
 }
 
+/** Fortsättning på havsscen med bild, text och knappar för fortsatt val framåt*/
 function oceanSceneOne () {
     document.body.style.backgroundImage = "url('./img/ocean.jpg')"
 
@@ -86,6 +87,7 @@ function oceanSceneOne () {
     button2.onclick = oceanSceneTwo;
 }
 
+/** Fortsättning på havsscen med bild, text och knappar för fortsatt val framåt*/
 function oceanSceneTwo () {
     document.body.style.backgroundImage = "url('./img/ocean.jpg')"
 
@@ -98,6 +100,7 @@ function oceanSceneTwo () {
     button2.onclick = oceanSceneThree;
 }
 
+/** Fortsättning på havsscen med bild, text och knapp, en knapp är gömd, för fortsatt val framåt*/
 function oceanSceneThree () {
     document.body.style.backgroundImage = "url('./img/ocean.jpg')"
 
@@ -108,7 +111,7 @@ function oceanSceneThree () {
 
     button2.classList.add("hidden");
 }
-
+/**Slutscen där användaren får val att spela spelet igen */
 function endScene () {
     document.body.style.backgroundImage = "url('./img/house.jpg')"
 

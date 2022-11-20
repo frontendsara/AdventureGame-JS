@@ -2,39 +2,43 @@ body{
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content:center;
     align-items: center;
     height: 100vh;
-    background-image: url(house.jpg);
+    background-image: url(./img/home.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: #04263A;
 }
 
 .container{
-    display: inline-block;
+    width: 30%;
     text-align: center;
-    background-color: grey;
+    background-color: lightgrey;
     padding: 1rem;
     border-radius: 2rem;
-    box-shadow: 0 0 10px 2px black;
-    height: 10rem;
-    opacity: 0.8;
+    box-shadow: 0 0 10px 2px lightgrey;
+    opacity: 0.9;
 }
 
 p{
     font-size: 1.5rem;
-    color: whitesmoke;
 }
 
 .btn-style{
+    margin-top: .5rem;
     padding: .5em;
     font-size: 1rem;
     border-radius: .5rem;
+    background-color: lightgray;
+    color: #04263A;
 }
 
 .btn-style:hover{
-    background-color: lightgray;
+    background-color: grey;
 }
 
 .hidden{

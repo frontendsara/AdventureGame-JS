@@ -25,7 +25,7 @@ function allElements(){
 
 /** första scenen i spelet med tillhörande element, bilder, text och knappar */
 function startScene () {
-    document.body.style.backgroundImage = "url('./img/house.jpg')"
+    document.body.style.backgroundImage = "url('./img/home.jpg')"
 
     text.textContent = "Hej! Du ska ut på äventyr i skogen eller till havet. Vad väljer du?";
 
@@ -45,7 +45,7 @@ function forestScene () {
     button1.textContent = "Ja!";
     button1.onclick = forestSceneOne;
 
-    button2.textContent = "Nej det verkar läskigt. Låt oss gå till havet istället";
+    button2.textContent = "Nja, låt oss gå till havet istället";
     button2.onclick = oceanScene;
 }
 /** Fortsättning på skogsscen med bild, text och knappar för fortsatt val framåt*/
@@ -67,10 +67,10 @@ function oceanScene () {
 
     text.textContent = "Åh vilka friska vindar här är, en sjöman älskar havets våg. Vad sägs om att ta båten och fiska?";
 
-    button1.textContent ="Nja, det var lite för friska vindar. Jag går hem";
+    button1.textContent ="Det var lite för friska vindar. Jag går hem";
     button1.onclick = endScene;
 
-    button2.textContent = "Låt oss se om vi får napp!"
+    button2.textContent = "Fiska!"
     button2.onclick = oceanSceneOne;
 }
 
@@ -96,7 +96,7 @@ function oceanSceneTwo () {
     button1.textContent = "Gå hem";
     button1.onclick = endScene;
 
-    button2.textContent = " Fortsätta Fiska";
+    button2.textContent = " Fortsätt Fiska";
     button2.onclick = oceanSceneThree;
 }
 
@@ -113,7 +113,7 @@ function oceanSceneThree () {
 }
 /**Slutscen där användaren får val att spela spelet igen */
 function endScene () {
-    document.body.style.backgroundImage = "url('./img/house.jpg')"
+    document.body.style.backgroundImage = "url('./img/home.jpg')"
 
     text.textContent ="Nu är du hemma och kan tänka tillbaka på ditt äventyr";
 

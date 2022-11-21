@@ -27,7 +27,7 @@ function allElements(){
 function startScene () {
     document.body.style.backgroundImage = "url('./img/home.jpg')"
 
-    text.textContent = "Hej! Du är trött på att sitta inne och vill ta dig ut och bestämmer dig för att bege dig ut op ett litet äventyr. Väl ute har du två val att gå, till den lummiga skogen eller till det friska havet? Vad väljer du?";
+    text.textContent = "Hej! Du är trött på att sitta inne och vill ta dig ut och bestämmer dig för att bege dig ut på ett litet äventyr. Väl ute har du två val att gå, till den lummiga skogen eller till det friska havet? Vad väljer du?";
 
     button1.textContent = "Skogen";
     button1.onclick = forestScene;

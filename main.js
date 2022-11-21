@@ -48,6 +48,7 @@ function forestScene () {
     button2.textContent = "Nja, låt oss gå till havet istället";
     button2.onclick = oceanScene;
 }
+
 /** Fortsättning på skogsscen med bild, text och knappar för fortsatt val framåt*/
 function forestSceneOne (){
     document.body.style.backgroundImage = "url('./img/forest.jpg')"
@@ -67,11 +68,23 @@ function oceanScene () {
 
     text.textContent = "Åh vilka friska vindar här är, en sjöman älskar havets våg. Och titta där borta, där ligger en båt förtöjd vid en brygga och ingen människa i sikte. Vad sägs om att ta båten och fiska?";
 
-    button1.textContent ="Det var lite för friska vindar. Jag går hem";
-    button1.onclick = endScene;
+    button1.textContent ="Nej, jag vill njuta av vyn";
+    button1.onclick = oceanSceneStorm;
 
     button2.textContent = "Fiska!"
     button2.onclick = oceanSceneOne;
+}
+
+/** En fortsättning till havsscen med bild, text och knappar för fortsatt val framåt*/
+function oceanSceneStorm () {
+    document.body.style.backgroundImage = "url('./img/storm.jpg')"
+
+    text.textContent = "Oj vad vädret tilltog! Sitter du kvar är riksken att du blåser bort. Bäst att skynda sig hem innan stormen tar dig!";
+
+    button1.textContent ="Gå Hem";
+    button1.onclick = endScene;
+
+    button2.classList.add("hidden");
 }
 
 /** Fortsättning på havsscen med bild, text och knappar för fortsatt val framåt*/

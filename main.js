@@ -27,7 +27,7 @@ function allElements(){
 function startScene () {
     document.body.style.backgroundImage = "url('./img/home.jpg')"
 
-    text.textContent = "Hej! Du ska ut på äventyr i skogen eller till havet. Vad väljer du?";
+    text.textContent = "Hej! Du är trött på att sitta inne och vill ta dig ut och bestämmer dig för att bege dig ut op ett litet äventyr. Väl ute har du två val att gå, till den lummiga skogen eller till det friska havet? Vad väljer du?";
 
     button1.textContent = "Skogen";
     button1.onclick = forestScene;
@@ -40,7 +40,7 @@ function startScene () {
 function forestScene () {
     document.body.style.backgroundImage = "url('./img/forest.jpg')"
 
-    text.textContent = "I skogen hittar du en koja bakom berg och sly. Vill du gå in?";
+    text.textContent = "I skogen är det lugnt och tyst, några fåglar kvittrar på avstånd. När du gått lite längre in upptäcker du en grotta bakom träd och sly. Vågar du gå in?";
 
     button1.textContent = "Ja!";
     button1.onclick = forestSceneOne;
@@ -52,7 +52,7 @@ function forestScene () {
 function forestSceneOne (){
     document.body.style.backgroundImage = "url('./img/forest.jpg')"
 
-    text.textContent = "HJÄLP! SPRING! Här bodde visst ett troll som inte var så sugen på besök. Vart vill du fly?";
+    text.textContent = "Först är allting oroväckande tyst. Du smyger dig lite längre in. Då hör du ett vrål! HJÄLP! SPRING! Här bodde visst ett troll som inte var så sugen på besök. Vart vill du fly?";
 
     button1.textContent = "Till Havet";
     button1.onclick = oceanScene;
@@ -65,7 +65,7 @@ function forestSceneOne (){
 function oceanScene () {
     document.body.style.backgroundImage = "url('./img/ocean.jpg')"
 
-    text.textContent = "Åh vilka friska vindar här är, en sjöman älskar havets våg. Vad sägs om att ta båten och fiska?";
+    text.textContent = "Åh vilka friska vindar här är, en sjöman älskar havets våg. Och titta där borta, där ligger en båt förtöjd vid en brygga och ingen människa i sikte. Vad sägs om att ta båten och fiska?";
 
     button1.textContent ="Det var lite för friska vindar. Jag går hem";
     button1.onclick = endScene;
@@ -78,7 +78,7 @@ function oceanScene () {
 function oceanSceneOne () {
     document.body.style.backgroundImage = "url('./img/ocean.jpg')"
 
-    text.textContent = "En fisk på kroken, hurra! Vad vill du göra nu, gå hem eller fortsätta fiska?";
+    text.textContent = "Nu hoppas vi på napp. Tålamod är en fiskares bästa vän och se där, en fisk på kroken, hurra! Vad vill du göra nu, gå hem eller fortsätta fiska?";
 
     button1.textContent = "Gå Hem";
     button1.onclick = endScene;
@@ -93,18 +93,18 @@ function oceanSceneTwo () {
 
     text.textContent = "WOW, en fisk till! Vill du fortsätta testa din fiskelycka eller känner du dig redo att gå hem?";
 
-    button1.textContent = "Gå hem";
-    button1.onclick = endScene;
+    button1.textContent = "Fortsätt Fiska";
+    button1.onclick = oceanSceneThree;
 
-    button2.textContent = " Fortsätt Fiska";
-    button2.onclick = oceanSceneThree;
+    button2.textContent = "Gå Hem";
+    button2.onclick = endScene;
 }
 
 /** Fortsättning på havsscen med bild, text och knapp, en knapp är gömd, för fortsatt val framåt*/
 function oceanSceneThree () {
     document.body.style.backgroundImage = "url('./img/ocean.jpg')"
 
-    text.textContent = "Tyvärr så fick du ingen mer fisk på kroken. Dags att gå hem.";
+    text.textContent = "Tyvärr så fick du ingen mer fisk på kroken och nu börjar vindarna tillta. Dags att gå hem.";
 
     button1.textContent = "Gå Hem";
     button1.onclick = endScene;
@@ -115,7 +115,7 @@ function oceanSceneThree () {
 function endScene () {
     document.body.style.backgroundImage = "url('./img/home.jpg')"
 
-    text.textContent ="Nu är du hemma och kan tänka tillbaka på ditt äventyr";
+    text.textContent ="Nu är du hemma igen och kan tänka tillbaka på ditt lilla äventyr. Kanske blir det ett annat äventyr nästa gång.";
 
     button1.textContent = "Spela Igen";
     button1.onclick = newPage;

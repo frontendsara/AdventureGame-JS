@@ -62,7 +62,7 @@ function forestSceneOne (){
     button2.onclick = forestSceneFour;
 }
 
-/** En förgrening till havsscen med bild, text och knappar för fortsatt val framåt*/
+/** Fortsättning på skogsscen med bild, text och knappar för fortsatt val framåt*/
 function forestSceneTwo () {
     document.body.style.backgroundImage = "url('./img/forset.jpg')"
 
@@ -74,7 +74,7 @@ function forestSceneTwo () {
     button2.classList.add("hidden");
 }
 
-/** En förgrening till havsscen med bild, text och knappar för fortsatt val framåt*/
+/** Fortsättning på skogsscen med bild, text och knappar för fortsatt val framåt*/
 function forestSceneTwo () {
     document.body.style.backgroundImage = "url('./img/darkforest.jpg')"
 
@@ -86,7 +86,7 @@ function forestSceneTwo () {
     button2.classList.add("hidden");
 }
 
-/** En förgrening till havsscen med bild, text och knappar för fortsatt val framåt*/
+/** Fortsättning på skogsscen med bild, text och knappar för fortsatt val framåt*/
 function forestSceneThree () {
     document.body.style.backgroundImage = "url('./img/castle.jpg')"
 
@@ -98,7 +98,7 @@ function forestSceneThree () {
     button2.classList.add("hidden");
 }
 
-/** En förgrening till havsscen med bild, text och knappar för fortsatt val framåt*/
+/** Fortsättning på skogsscen med bild, text och knappar för fortsatt val framåt*/
 function forestSceneFour () {
     document.body.style.backgroundImage = "url('./img/darkforest.jpg')"
 
@@ -111,7 +111,7 @@ function forestSceneFour () {
 }
 
 
-/** En förgrening till havsscen med bild, text och knappar för fortsatt val framåt*/
+/** Fortsättning på skogsscen med bild, text och knappar för fortsatt val framåt*/
 function forestSceneTwo () {
     document.body.style.backgroundImage = "url('./img/darkforest.jpg')"
 
@@ -123,7 +123,7 @@ function forestSceneTwo () {
     button2.classList.add("hidden");
 }
 
-/** En förgrening till havsscen med bild, text och knappar för fortsatt val framåt*/
+/** En förgrening till stadsscenen med bild, text och knappar för fortsatt val framåt*/
 function cityScene () {
     document.body.style.backgroundImage = "url('./img/city.jpg')"
 
@@ -136,7 +136,7 @@ function cityScene () {
     button2.onclick = citySceneTwo;
 }
 
-/** En fortsättning till havsscen med bild, text och knappar för fortsatt val framåt*/
+/** Fortsättning på stadsscenen med bild, text och knappar för fortsatt val framåt*/
 function citySceneOne () {
     document.body.style.backgroundImage = "url('./img/city.jpg')"
 
@@ -149,7 +149,7 @@ function citySceneOne () {
     button2.onclick = citySceneFour;
 }
 
-/** Fortsättning på havsscen med bild, text och knappar för fortsatt val framåt*/
+/** Fortsättning på stadsscenen med bild, text och knappar för fortsatt val framåt*/
 function citySceneTwo () {
     document.body.style.backgroundImage = "url('./img/city.jpg')"
 
@@ -161,7 +161,7 @@ function citySceneTwo () {
     button2.classList.add("hidden");
 }
 
-/** Fortsättning på havsscen med bild, text och knappar för fortsatt val framåt*/
+/** Fortsättning på stadsscenen med bild, text och knappar för fortsatt val framåt*/
 function citySceneThree () {
     document.body.style.backgroundImage = "url('./img/city.jpg')"
 
@@ -173,7 +173,7 @@ function citySceneThree () {
     button2.classList.add("hidden");
 }
 
-/** Fortsättning på havsscen med bild, text och knapp, en knapp är gömd, för fortsatt val framåt*/
+/** Fortsättning på stadsscenen med bild, text och knappar för fortsatt val framåt*/
 function citySceneFour () {
     document.body.style.backgroundImage = "url('./img/city.jpg')"
 

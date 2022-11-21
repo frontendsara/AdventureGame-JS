@@ -40,7 +40,7 @@ function startScene () {
 function forestScene () {
     document.body.style.backgroundImage = "url('./img/forest.jpg')"
 
-    text.textContent = "Stella börjar tryggt. Nära sitt hem och allt hon känner. Trevande börjar Stella gå mot okända vägar, ut mot något nytt, något spännande och kanske något helt underbart. Stella har inte hunnit längt när Dim och Sum hoppar fram bakom ett träd. Dim och Sum frågar om de kan följa med Stella på sin färd mot det okända?";
+    text.textContent = "Stella börjar tryggt. Nära sitt hem och allt hon känner. Trevande börjar Stella gå mot okända vägar, ut mot något nytt, något spännande och kanske något helt underbart. Stella har inte hunnit långt när Dim och Sum hoppar fram bakom ett träd. Dim och Sum frågar om de kan följa med Stella på sin färd mot det okända?";
 
     button1.textContent = "Ja!";
     button1.onclick = forestSceneOne;
@@ -64,18 +64,18 @@ function forestSceneOne (){
 
 /** Fortsättning på skogsscen med bild, text och knappar för fortsatt val framåt*/
 function forestSceneTwo () {
-    document.body.style.backgroundImage = "url('./img/forset.jpg')"
+    document.body.style.backgroundImage = "url('./img/forest.jpg')"
 
     text.textContent = "Stella orkar inte ha två virriga filurer efter sig och bestämmer sig för att vänligt säga ”Inte den här gången men kanske nästa gång”. Dim och Sum blir besvikna men glömmer helt bort sin fråga när de ser en fjäril flyga förbi. Bra tänker Stella, nu kan jag fortsätta i lugn och ro.";
 
     button1.textContent =">>";
-    button1.onclick = oceanSceneStorm;
+    button1.onclick = forestSceneFive;
 
     button2.classList.add("hidden");
 }
 
 /** Fortsättning på skogsscen med bild, text och knappar för fortsatt val framåt*/
-function forestSceneTwo () {
+function forestSceneFive () {
     document.body.style.backgroundImage = "url('./img/darkforest.jpg')"
 
     text.textContent = "Stella har gått länge nu och det börjar bli mörkt. Stella ångrar sig att inte Dim och Sum följde med. För sent att vara efterklok. Det är bara att bita ihop. Men mitt i tankarna ser Stella ett sken i mörkret. Ska jag våga gå dit tänker Stella. Det börjar ju trotts allt bli mörkt och jag är både hungrig och trött. Men Stella kunde inte ana vad som skulle ske när hon knackade på… ";
@@ -110,24 +110,11 @@ function forestSceneFour () {
     button2.classList.add("hidden");
 }
 
-
-/** Fortsättning på skogsscen med bild, text och knappar för fortsatt val framåt*/
-function forestSceneTwo () {
-    document.body.style.backgroundImage = "url('./img/darkforest.jpg')"
-
-    text.textContent = "Stella har gått länge nu och det börjar bli mörkt. Stella ångrar sig att inte Dim och Sum följde med. För sent att vara efterklok. Det är bara att bita ihop. Men mitt i tankarna ser Stella ett sken i mörkret. Ska jag våga gå dit tänker Stella. Det börjar ju trotts allt bli mörkt och jag är både hungrig och trött. Men Stella kunde inte ana vad som skulle ske när hon knackade på…  ";
-
-    button1.textContent =">>";
-    button1.onclick = endScene;
-
-    button2.classList.add("hidden");
-}
-
 /** En förgrening till stadsscenen med bild, text och knappar för fortsatt val framåt*/
 function cityScene () {
     document.body.style.backgroundImage = "url('./img/city.jpg')"
 
-    text.textContent = "Efter veckor av letande hittar Stella Staden. Allt är stort, det går snabbt och det är ganska smutsigt. Innan Stella avfördar Staden helt måste Stella ge det en chans. Snabbt möter Stella råttan. En trevlig figur som erbjuder sig att visa Stella runt i Staden.";
+    text.textContent = "Efter veckor av letande hittar Stella Staden. Allt är stort, det går snabbt och det är ganska smutsigt. Innan Stella avfärdar Staden helt måste Stella ge det en chans. Snabbt möter Stella råttan. En trevlig figur som erbjuder sig att visa Stella runt i Staden.";
 
     button1.textContent ="Ja";
     button1.onclick = citySceneOne;
@@ -153,7 +140,7 @@ function citySceneOne () {
 function citySceneTwo () {
     document.body.style.backgroundImage = "url('./img/city.jpg')"
 
-    text.textContent = "Även om råttan ser snäll ut vill Stella klara sig själv och tackar för erbjudandet men går vidare på egen hand. Med stor försiktighet går Stella ut i staden för att mötas av hus högre än berg. Stella blir helt vimmelkantig av alla intryck och måste sätta sig en stund. Stella märker att det börjar röra på sig och inser för sent att Stella har satt sig på en sparkcykel och farten är nu för hög för att Stella ska våga hoppa av…";
+    text.textContent = "Även om råttan ser snäll ut vill Stella klara sig själv och tackar för erbjudandet men går vidare på egen hand. Med stor försiktighet går Stella ut i staden för att mötas av hus högre än berg. Stella blir helt vimmelkantig av alla intryck och måste sätta sig en stund. Stella märker att det börjar röra på sig och inser för sent att hon har satt sig på en sparkcykel och farten är nu för hög för att Stella ska våga hoppa av…";
 
     button1.textContent = ">>";
     button1.onclick = endScene;
@@ -177,7 +164,7 @@ function citySceneThree () {
 function citySceneFour () {
     document.body.style.backgroundImage = "url('./img/city.jpg')"
 
-    text.textContent = "Stella fortsätter själv, hur illa kan det gå? Stella känner en doft av stekos och blir påmind att det var ett tag sedan frukost. Lunch har redan passerat och det är redan middag. Stella följer doften av stekos och hamnar framför en korvkiosk. Nu måste bara Stella komma på ett sätt att få tag i mat…";
+    text.textContent = "Stella fortsätter själv, hur illa kan det gå? Stella känner en doft av stekos och blir påmind att det var ett tag sedan frukost. Lunch har redan passerat och det är redan middag. Stella följer doften av stekos och hamnar framför en korvkiosk. Nu måste bara Stella komma på ett sätt att få tag i maten…";
 
     button1.textContent = ">>";
     button1.onclick = endScene;
